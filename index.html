@@ -771,6 +771,72 @@
             transform: scale(1.1);
         }
 
+        /* Footer Styles */
+        footer {
+            background: white;
+            margin-top: 60px;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border-top: 4px solid #c62828;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-section h3 {
+            color: #c62828;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+
+        .footer-section p, .footer-section li {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: #1565c0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: #c62828;
+        }
+
+        .footer-brands {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .brand-tag {
+            background: #f0f0f0;
+            padding: 6px 12px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #f0f0f0;
+            color: #999;
+        }
+
         @media (max-width: 768px) {
             .header-logo {
                 width: 120px;
@@ -826,8 +892,9 @@
     <div class="container">
         <header>
             <img src="Excercise-6.jpg" alt="Red Sea Tire Logo" class="header-logo">
-            <h1>🔴 Red Sea Tire</h1>
-            <p>Find Your Perfect Tires & Services - Shop Online with Delivery</p>
+            <h1>🔴 Red Sea Tire Corporation</h1>
+            <p>Your trusted source for high-quality tires and professional tire services in Scarborough, Ontario</p>
+            <p style="font-size: 1.2em; margin-top: 10px;">📍 140 Manville Rd, Unit 4, Scarborough, ON M1L 4J5 | 📞 (416) 752-2999</p>
         </header>
 
         <div class="filters">
@@ -887,6 +954,71 @@
         </div>
 
         <div class="products-grid" id="productsGrid"></div>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>📍 Visit Us</h3>
+                    <p><strong>Red Sea Tire Corporation</strong></p>
+                    <p>140 Manville Rd, Unit 4<br>
+                    Scarborough, ON M1L 4J5</p>
+                    <p>📞 <a href="tel:+14167522999">(416) 752-2999</a></p>
+                    <p>✉️ <a href="mailto:info@redseatire.com">info@redseatire.com</a></p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>🕐 Hours of Operation</h3>
+                    <ul>
+                        <li><strong>Monday - Saturday:</strong> 8:00 AM – 6:00 PM</li>
+                        <li><strong>Sunday:</strong> Closed</li>
+                    </ul>
+                    <p style="margin-top: 20px;"><strong>🚚 Delivery Available</strong><br>
+                    We deliver and install at your location!</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>🔧 Our Services</h3>
+                    <ul>
+                        <li>✓ Tire installation & balancing</li>
+                        <li>✓ Tire rotation & repair</li>
+                        <li>✓ Seasonal tire changeover</li>
+                        <li>✓ Wheel alignment & inspection</li>
+                        <li>✓ Tire pressure & tread check</li>
+                        <li>✓ Used tire sales & recycling</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>🏆 Brands We Carry</h3>
+                    <div class="footer-brands">
+                        <span class="brand-tag">Michelin</span>
+                        <span class="brand-tag">Bridgestone</span>
+                        <span class="brand-tag">Goodyear</span>
+                        <span class="brand-tag">Continental</span>
+                        <span class="brand-tag">Pirelli</span>
+                        <span class="brand-tag">Yokohama</span>
+                        <span class="brand-tag">Hankook</span>
+                        <span class="brand-tag">Kumho</span>
+                        <span class="brand-tag">Toyo</span>
+                        <span class="brand-tag">Cooper</span>
+                        <span class="brand-tag">General</span>
+                        <span class="brand-tag">Falken</span>
+                        <span class="brand-tag">BFGoodrich</span>
+                        <span class="brand-tag">Firestone</span>
+                        <span class="brand-tag">Nitto</span>
+                        <span class="brand-tag">Uniroyal</span>
+                        <span class="brand-tag">Dunlop</span>
+                        <span class="brand-tag">Sumitomo</span>
+                    </div>
+                    <p style="margin-top: 15px; font-style: italic;">Brand new & quality used tires at competitive prices</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Red Sea Tire Corporation. All rights reserved. | Serving Scarborough, Ontario with quality tires and professional service.</p>
+            </div>
+        </footer>
     </div>
 
     <!-- Shopping Cart Modal -->
@@ -1068,6 +1200,50 @@
                             vehicleType: ['sedan', 'wagon'],
                             specs: ['EcoPlus Technology', 'Low rolling resistance', '70,000 mile warranty'],
                             popular: false
+                        },
+                        {
+                            id: 15,
+                            name: 'Yokohama AVID Ascend GT',
+                            description: 'Premium touring tire with long tread life and year-round traction',
+                            price: 129.99,
+                            image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80',
+                            type: ['all-season', 'touring'],
+                            vehicleType: ['sedan', 'coupe'],
+                            specs: ['65,000 mile warranty', 'TriBLEND compound', 'All-season grip'],
+                            popular: true
+                        },
+                        {
+                            id: 16,
+                            name: 'Hankook Kinergy PT',
+                            description: 'Affordable all-season tire with great fuel efficiency and comfort',
+                            price: 119.99,
+                            image: 'https://images.unsplash.com/photo-1606577924006-27d39b132ae2?w=400&q=80',
+                            type: ['all-season', 'passenger'],
+                            vehicleType: ['sedan', 'wagon'],
+                            specs: ['70,000 mile warranty', 'Low rolling resistance', 'Quiet ride'],
+                            popular: true
+                        },
+                        {
+                            id: 17,
+                            name: 'Cooper CS5 Ultra Touring',
+                            description: 'Dependable all-season tire with enhanced wet braking',
+                            price: 124.99,
+                            image: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=400&q=80',
+                            type: ['all-season', 'touring'],
+                            vehicleType: ['sedan', 'coupe'],
+                            specs: ['60,000 mile warranty', 'StabilEdge Technology', 'Wet traction'],
+                            popular: false
+                        },
+                        {
+                            id: 18,
+                            name: 'Toyo Extensa A/S II',
+                            description: 'Value all-season tire with reliable performance',
+                            price: 109.99,
+                            image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80',
+                            type: ['all-season', 'passenger'],
+                            vehicleType: ['sedan', 'coupe'],
+                            specs: ['65,000 mile warranty', 'Multi-wave sipes', 'All-weather traction'],
+                            popular: true
                         }
                     ]
                 },
@@ -1106,6 +1282,28 @@
                             type: ['all-season', 'luxury'],
                             vehicleType: ['suv', 'crossover'],
                             specs: ['Eco-friendly compound', 'Low noise', '60,000 mile warranty'],
+                            popular: true
+                        },
+                        {
+                            id: 19,
+                            name: 'Firestone Destination LE3',
+                            description: 'Versatile all-season SUV tire for comfort and capability',
+                            price: 164.99,
+                            image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=400&q=80',
+                            type: ['all-season', 'suv'],
+                            vehicleType: ['suv', 'crossover'],
+                            specs: ['60,000 mile warranty', 'Hydro-Grip Technology', 'Snow rated'],
+                            popular: true
+                        },
+                        {
+                            id: 20,
+                            name: 'Nitto Terra Grappler G2',
+                            description: 'Aggressive all-terrain tire for trucks and SUVs',
+                            price: 209.99,
+                            image: 'https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=400&q=80',
+                            type: ['all-terrain', 'off-road'],
+                            vehicleType: ['truck', 'suv'],
+                            specs: ['Reinforced sidewall', 'Off-road traction', 'On-road comfort'],
                             popular: true
                         }
                     ]
@@ -1172,46 +1370,68 @@
                     items: [
                         {
                             id: 11,
-                            name: 'Tire Installation Package',
-                            description: 'Complete tire installation with balancing, valve stems, and disposal',
-                            price: 99.99,
+                            name: 'Tire Installation & Balancing',
+                            description: 'Professional tire installation with precision balancing for smooth ride',
+                            price: 89.99,
                             image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80',
                             type: ['service', 'installation'],
                             vehicleType: ['all'],
-                            specs: ['Mount & balance', 'New valve stems', 'Old tire disposal', 'TPMS reset'],
+                            specs: ['Mount & balance', 'New valve stems', 'TPMS service', 'Expert installation'],
                             popular: true
                         },
                         {
                             id: 12,
-                            name: 'Wheel Alignment',
-                            description: 'Precision 4-wheel alignment to extend tire life and improve handling',
-                            price: 79.99,
+                            name: 'Seasonal Tire Changeover',
+                            description: 'Switch between winter and summer tires for optimal seasonal performance',
+                            price: 69.99,
                             image: 'https://images.unsplash.com/photo-1606577924006-27d39b132ae2?w=400&q=80',
-                            type: ['service', 'maintenance'],
+                            type: ['service', 'seasonal'],
                             vehicleType: ['all'],
-                            specs: ['Computerized alignment', 'Adjust camber/caster/toe', '12-month warranty'],
+                            specs: ['Winter/Summer change', 'Balance check', 'Torque to spec', 'Storage available'],
                             popular: true
                         },
                         {
                             id: 13,
-                            name: 'Tire Rotation & Balance',
-                            description: 'Rotate and balance all four tires to maximize tread life',
-                            price: 49.99,
+                            name: 'Wheel Alignment & Inspection',
+                            description: 'Computerized alignment to extend tire life and improve handling',
+                            price: 79.99,
                             image: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=400&q=80',
                             type: ['service', 'maintenance'],
                             vehicleType: ['all'],
-                            specs: ['5-tire rotation available', 'Dynamic balancing', 'Torque to spec'],
-                            popular: false
+                            specs: ['4-wheel alignment', 'Adjust camber/caster/toe', 'Full inspection', 'Printout report'],
+                            popular: true
                         },
                         {
                             id: 14,
-                            name: 'Flat Tire Repair',
-                            description: 'Professional tire repair with rubber plug and patch',
+                            name: 'Tire Rotation & Balance',
+                            description: 'Regular rotation and balancing to maximize tire life',
+                            price: 49.99,
+                            image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80',
+                            type: ['service', 'maintenance'],
+                            vehicleType: ['all'],
+                            specs: ['Tire rotation', 'Dynamic balancing', 'Pressure check', 'Tread inspection'],
+                            popular: true
+                        },
+                        {
+                            id: 21,
+                            name: 'Tire Repair Service',
+                            description: 'Expert tire repair for punctures and slow leaks',
                             price: 29.99,
                             image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=400&q=80',
                             type: ['service', 'repair'],
                             vehicleType: ['all'],
-                            specs: ['Rubber plug & patch', 'Leak test', 'Re-balance if needed'],
+                            specs: ['Rubber plug & patch', 'Leak test', 'Re-balance', 'Safety inspection'],
+                            popular: true
+                        },
+                        {
+                            id: 22,
+                            name: 'Tire Pressure & Tread Check',
+                            description: 'Free tire pressure check and tread depth measurement',
+                            price: 0.00,
+                            image: 'https://images.unsplash.com/photo-1606577924006-27d39b132ae2?w=400&q=80',
+                            type: ['service', 'inspection'],
+                            vehicleType: ['all'],
+                            specs: ['Pressure check', 'Tread depth', 'Visual inspection', 'FREE service'],
                             popular: true
                         }
                     ]
@@ -1489,12 +1709,23 @@
         function generateAIResponse(userMessage) {
             const lowerMessage = userMessage.toLowerCase();
 
+            // Location and hours
+            if (lowerMessage.includes('location') || lowerMessage.includes('address') || lowerMessage.includes('where')) {
+                return "📍 We're located at <strong>140 Manville Rd, Unit 4, Scarborough, ON M1L 4J5</strong>. We're open Monday-Saturday 8AM-6PM, closed Sundays. Call us at (416) 752-2999!";
+            }
+            if (lowerMessage.includes('hours') || lowerMessage.includes('open') || lowerMessage.includes('when')) {
+                return "🕐 <strong>Hours of Operation:</strong><br>Monday-Saturday: 8:00 AM – 6:00 PM<br>Sunday: Closed<br>Call ahead at (416) 752-2999 or order online anytime!";
+            }
+
             // Delivery questions
             if (lowerMessage.includes('deliver') || lowerMessage.includes('shipping')) {
-                return "🚚 We offer 3 delivery options:<br>• <strong>Standard</strong> (5-7 days) - FREE<br>• <strong>Express</strong> (2-3 days) - $25<br>• <strong>Rush</strong> (Next day) - $50<br>All orders include installation at your location!";
+                return "🚚 We offer delivery and installation in the Scarborough area! Choose from:<br>• <strong>Standard</strong> (5-7 days) - FREE<br>• <strong>Express</strong> (2-3 days) - $25<br>• <strong>Rush</strong> (Next day) - $50<br>Professional installation included!";
             }
             if (lowerMessage.includes('install') && !lowerMessage.includes('package')) {
-                return "🔧 Yes! All tire purchases include professional installation at your delivery address. We mount, balance, and dispose of old tires!";
+                return "🔧 Yes! We provide professional installation & balancing for $89.99, or we can deliver and install at your location. We also do seasonal tire changeovers!";
+            }
+            if (lowerMessage.includes('seasonal') || lowerMessage.includes('changeover') || lowerMessage.includes('winter change')) {
+                return "❄️☀️ We offer <strong>Seasonal Tire Changeover</strong> for $69.99! Switch between winter and summer tires. We serve Scarborough, ON - call (416) 752-2999 to book!";
             }
 
             // Vehicle types
