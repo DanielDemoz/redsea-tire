@@ -26,20 +26,36 @@
         header {
             text-align: center;
             color: white;
-            margin-bottom: 40px;
-            padding: 30px 0;
+            margin-bottom: 50px;
+            padding: 50px 0;
             position: relative;
         }
 
+        .header-logo {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 30px;
+            display: block;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+            border: 5px solid white;
+            background: white;
+            object-fit: contain;
+            padding: 10px;
+        }
+
         header h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-size: 4.5em;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+            font-weight: 800;
+            letter-spacing: 2px;
         }
 
         header p {
-            font-size: 1.2em;
-            opacity: 0.9;
+            font-size: 1.5em;
+            opacity: 0.95;
+            font-weight: 500;
         }
 
         /* Shopping Cart Button */
@@ -756,8 +772,18 @@
         }
 
         @media (max-width: 768px) {
+            .header-logo {
+                width: 120px;
+                height: 120px;
+                margin-bottom: 20px;
+            }
+
             header h1 {
-                font-size: 2em;
+                font-size: 2.5em;
+            }
+
+            header p {
+                font-size: 1.1em;
             }
 
             .filter-group {
@@ -799,6 +825,7 @@
 
     <div class="container">
         <header>
+            <img src="Excercise-6.jpg" alt="Red Sea Tire Logo" class="header-logo">
             <h1>🔴 Red Sea Tire</h1>
             <p>Find Your Perfect Tires & Services - Shop Online with Delivery</p>
         </header>
